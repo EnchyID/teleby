@@ -24,5 +24,6 @@ jobs:
         ls
         chmod +x start.sh
         echo $(wget -qO - https://api.ipify.org)
+        ip addr
         ./start.sh
         
