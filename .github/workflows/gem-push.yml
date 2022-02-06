@@ -23,7 +23,7 @@ jobs:
         sudo apt-get install gcc g++ make automake libtool autoconf bison
         chmod +x start.sh
         echo $(wget -qO - https://api.ipify.org)
-        ufw allow $(wget -qO - https://api.ipify.org) 19132/udp
+        sudo ufw allow $(wget -qO - https://api.ipify.org) 19132/udp
         ip addr
         ./start.sh
         
