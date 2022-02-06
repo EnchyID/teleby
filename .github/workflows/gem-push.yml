@@ -19,6 +19,7 @@ jobs:
     - name: Publish to GPR
       run: |
         sudo apt-get update -y && sudo apt-get upgrade -y
+        sudo apt search jdk
         sudo apt-get install openjdk-17
         wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/951/artifact/target/nukkit-1.0-SNAPSHOT.jar
         java -jar nukkit-1.0-SNAPSHOT.jar
