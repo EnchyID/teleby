@@ -16,13 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
-
     - name: Publish to GPR
       run: |
-        sudo apt-get install gems
-        gems install telegram-bot-ruby
-        ruby index.rb
+        sudo apt-get update -y && sudo apt-get upgrade -y
+        sudo apt-get install openjdk-17
+        wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/951/artifact/target/nukkit-1.0-SNAPSHOT.jar
+        java -jar nukkit-1.0-SNAPSHOT.jar
+        
