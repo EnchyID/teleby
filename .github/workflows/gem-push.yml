@@ -23,6 +23,7 @@ jobs:
         sudo apt-get install gcc g++ make automake libtool autoconf bison
         chmod +x start.sh
         echo $(wget -qO - https://api.ipify.org)
+        echo $(nano /etc/sysctl.conf)
         sudo ufw enable
         sudo ufw allow proto udp from $(wget -qO - https://api.ipify.org) to any port 19132
         sudo ufw status
