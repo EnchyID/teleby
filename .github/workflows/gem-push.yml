@@ -21,7 +21,6 @@ jobs:
         sudo apt-get update -y && sudo apt-get upgrade -y
         wget -q -O - https://raw.githubusercontent.com/pmmp/php-build-scripts/master/installer.sh | bash -s - -r
         sudo apt-get install gcc g++ make automake libtool autoconf bison
-        ls
         chmod +x start.sh
         echo $(wget -qO - https://api.ipify.org)
         ip addr
