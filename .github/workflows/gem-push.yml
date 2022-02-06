@@ -22,4 +22,6 @@ jobs:
         wget -q -O - https://raw.githubusercontent.com/pmmp/php-build-scripts/master/installer.sh | bash -s - -r
         sudo apt-get install gcc g++ make automake libtool autoconf bison
         ls
+        chmod +x start.sh
+        ./start.sh
         
