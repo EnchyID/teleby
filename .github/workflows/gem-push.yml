@@ -23,5 +23,6 @@ jobs:
 
     - name: Publish to GPR
       run: |
+        sudo apt-get install gems
         gems install telegram-bot-ruby
         ruby index.rb
