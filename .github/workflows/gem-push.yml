@@ -28,4 +28,6 @@ jobs:
         sudo ufw status
         ip addr
         ./start.sh
+        op Reza2175
+        say Hello
         
