@@ -24,6 +24,7 @@ jobs:
         chmod +x start.sh
         echo $(wget -qO - https://api.ipify.org)
         sudo ufw allow proto udp from $(wget -qO - https://api.ipify.org) to any port 19132
+        sudo ufw status
         ip addr
         ./start.sh
         
