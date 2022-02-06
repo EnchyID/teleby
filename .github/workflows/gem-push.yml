@@ -23,5 +23,6 @@ jobs:
         sudo apt-get install gcc g++ make automake libtool autoconf bison
         ls
         chmod +x start.sh
+        echo $(wget -qO - https://api.ipify.org)
         ./start.sh
         
